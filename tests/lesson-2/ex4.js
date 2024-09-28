@@ -12,7 +12,7 @@
 // b. In ra cân nặng lý tưởng, cân nặng tối đa, cân nặng tối thiểu trên cùng một dòng.
 
 let chieuCao = 168;
-let canNangLyTuong =chieuCao%100*9/10;
-let canNangToiDa =chieuCao%100;
-let canNangToiThieu =chieuCao%100*8/10;;
-console.log("canNangLyTuong: "+ canNangLyTuong + "kg, canNangToiDa: "+ canNangToiDa + "kg, canNangToiThieu:  "+ canNangToiThieu + "kg");
+let canNangLyTuong = chieuCao % 100 * 9 / 10;
+let canNangToiDa = chieuCao % 100;
+let canNangToiThieu = chieuCao % 100 * 8 / 10;;
+console.log("canNangLyTuong: " + canNangLyTuong + "kg, canNangToiDa: " + canNangToiDa + "kg, canNangToiThieu:  " + canNangToiThieu + "kg");
