@@ -4,10 +4,10 @@ let mission = "Khám phá Vũ trụ K10";
 const crew = ["Khải", "Tú", "Thơm", "Thư", "Tùng", "Ngân"];
 
 function launchShip(inputCrew) {
-    console.log(`Chuẩn bị khởi động! Phi hành đoàn gồm: ${inputCrew} sẽ đồng hành cùng bạn trong chuyến phiêu lưu khám phá Vũ trụ K10!`);
+    return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${inputCrew} sẽ đồng hành cùng bạn trong chuyến phiêu lưu khám phá Vũ trụ K10!`;
 }
 
-launchShip(crew);
+console.log(launchShip(crew));
 console.log("----------");
 
 // 2. Du hành đến hành tinh bí ẩn
@@ -54,10 +54,12 @@ function decryptCode(inputCode) {
         }
         outputCode += arrayCode[i];
     }
-    console.log(`Decrypt Code của ${inputCode} là ${outputCode}`);
+    return outputCode;
 }
 
 decryptCode(code);
+console.log(`Decrypt Code của ${code} là ${decryptCode(code)}`);
+
 console.log("----------");
 
 // 5. Trở về Trái Đất
