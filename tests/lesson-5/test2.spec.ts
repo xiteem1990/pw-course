@@ -21,8 +21,7 @@ test("Bài học 2: Product page", async ({ page }) => {
     })
 
     await test.step("Add product 2 three times", async () => {
-        await page.locator("//button[@data-product-id='2']").dblclick();
-        await page.locator("//button[@data-product-id='2']").click();
+        await page.locator("//button[@data-product-id='2']").click({clickCount:3});
     })
 
     await test.step("Add product 3 one time", async () => {

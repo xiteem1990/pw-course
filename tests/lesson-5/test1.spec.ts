@@ -3,8 +3,9 @@ import { test } from '@playwright/test';
 // 1. Tạo file test1.spec.ts. Truy cập trang https://material.playwrightvn.com/, click vào “Bài học 1: Register Page”
 // a. Nhập đầy đủ các thông tin, click button register
 
+let baseURL = "https://material.playwrightvn.com/";
+
 test('Bài học 1: Register Page', async ({ page }) => {
-    let baseURL = "https://material.playwrightvn.com/";
 
     await test.step("Navigate to playwrightvn.com", async () => {
         await page.goto(baseURL);
@@ -33,7 +34,3 @@ test('Bài học 1: Register Page', async ({ page }) => {
         await page.locator("//button[@type='submit']").click();
     })
 })
-
-
-
-
